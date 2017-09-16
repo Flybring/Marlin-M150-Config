@@ -81,8 +81,8 @@
 // build by the user have been successfully uploaded into firmware.
 #define STRING_CONFIG_H_AUTHOR "Flybring" // Who made the changes.
 #define SHOW_BOOTSCREEN
-//#define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
-//#define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
+#define STRING_SPLASH_LINE1 SHORT_BUILD_VERSION // will be shown during bootup in line 1
+#define STRING_SPLASH_LINE2 WEBSITE_URL         // will be shown during bootup in line 2
 
 //
 // *** VENDORS PLEASE READ *****************************************************
@@ -502,7 +502,7 @@
 #define X_MAX_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
 #define Y_MAX_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
 #define Z_MAX_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
-//#define Z_MIN_PROBE_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
+#define Z_MIN_PROBE_ENDSTOP_INVERTING true // set to true to invert the logic of the endstop.
 
 // Enable this feature if all enabled endstop pins are interrupt-capable.
 // This will remove the need to poll the interrupt pins, saving many CPU cycles.
@@ -931,12 +931,12 @@
 
   // 3 arbitrary points to probe.
   // A simple cross-product is used to estimate the plane of the bed.
-  #define ABL_PROBE_PT_1_X 50
-  #define ABL_PROBE_PT_1_Y 150
-  #define ABL_PROBE_PT_2_X 50
-  #define ABL_PROBE_PT_2_Y 50
-  #define ABL_PROBE_PT_3_X 150
-  #define ABL_PROBE_PT_3_Y 50
+  #define ABL_PROBE_PT_1_X 55
+  #define ABL_PROBE_PT_1_Y 145
+  #define ABL_PROBE_PT_2_X 55
+  #define ABL_PROBE_PT_2_Y 60
+  #define ABL_PROBE_PT_3_X 155
+  #define ABL_PROBE_PT_3_Y 100
 
 #elif ENABLED(AUTO_BED_LEVELING_UBL)
 
