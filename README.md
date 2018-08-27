@@ -40,10 +40,7 @@ avrdude.exe -v -p atmega1284p -c arduino -P com3 -b 57600 -V -U flash:w:Marlin.i
             sanguino.menu.cpu.malyan_m150.build.f_cpu=16000000L
 
 4. Configure Marlin
-    * Copy `_Bootscreen.h`, `Configuration.h`, and `Configuration_adv.h`
-    from `Marlin/example_configurations/Malyan/M150` to `Marlin`
-    (overwrite files)
-    * Read `Configuration.h` and make any necessary changes
+    * Copy `_Bootscreen.h`, `Configuration.h`, and `Configuration_adv.h` to `Marlin`
 
 5. Flash Marlin
     * Turn on printer while pressing scroll wheel button
